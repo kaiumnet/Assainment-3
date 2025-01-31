@@ -5,25 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assainment-3</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/213afaf44d.js"></script>
 </head>
 <body>
-  
-  <main>
+
+
+  <header>
     <nav>
-      <div class="flex items-center px-24 py-5 bg-rose-50">
-        <div>
-          <img src="./images/logo-header.png" alt="">
+      <div class="flex px-20 py-5 bg-neutral-100 h-16 justify-between items-center">
+
+        <div class="flex">
+          <div>
+            <img src="./images/logo-header.png" alt="">
+          </div>
+          <div>
+            <h2 class="text-2xl m-3">Browse <span class="text-amber-400">4</span>Pets</h2>
+          </div>
         </div>
-        <div>
-          <h2 class="text-3xl m-3">Browse <span class="text-amber-400">4</span>Pets</h2>
+
+        <div class="flex list-none gap-14">
+          <li class="hover:text-indigo-900"><a href="">Find a pet</a></li>
+          <li class="hover:text-indigo-900"><a href="">Breads</a></li>
+          <li class="hover:text-indigo-900"><a href="">Contact us</a></li>
         </div>
-        <div class="flex list-none gap-7">
-          <li>Find a pet</li>
-          <li>Breads</li>
-          <li>Contact us</li>
+
+        <div class="flex items-center">
+          <div class="cursor-pointer m-3">
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+
+          <div>
+            <input class="px-5 py-1 w-24 rounded-lg" type="text" placeholder="Login">
+            <button class="bg-amber-200 px-5 py-1 rounded-lg">Register</button>
+          </div>
+
+
         </div>
       </div>
     </nav>
+  </header>
+  
+  <main class="mx-20">
+
+    <section>
+
+      <div class="my-10">
+        <h1 class="text-3xl font-bold w-2/3">
+          Pamper Your Pet,<br> Because They Deserve <br> the Bes
+        </h1>
+        <p class="w-2/4">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+      </div>
+
+      <div class="bg-cover bg-center h-screen" 
+      style="background-image: url('./images/cat-big.png');">
+</div>
+    </section>
+
+
+    <section>
+      <div class="">
+        <h2 class="text-2xl font-bold">Browse By Categories</h2>
+      </div>
+
+      <div class="flex gap-6 justify-center my-10">
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/dog-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Dog</h3>
+          <p class="text-gray-700">3 items</p>
+        </div>
+  
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/fish-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Fish</h3>
+          <p class="text-gray-700">5 items</p>
+        </div>
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/cat-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Cat</h3>
+          <p class="text-gray-700">6 items</p>
+        </div>
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/bird-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Birds</h3>
+          <p class="text-gray-700">2 items</p>
+        </div>
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/mouse-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Small Pet</h3>
+          <p class="text-gray-700">3 items</p>
+        </div>
+        <div class="shadow-lg bg-yellow-200 p-10 rounded-lg">
+          <div class="bg-white p-3 rounded-full m-2">
+            <img src="./images/rabbit-cartoon.png" alt="">
+          </div>
+          <h3 class="font-bold">Rabit</h3>
+          <p class="text-gray-700">2 items</p>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <section>
+
+
+    </section>
+
   </main>
 
 </body>
