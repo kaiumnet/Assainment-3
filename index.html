@@ -14,41 +14,54 @@
     <nav>
       <div class="flex px-20 py-5 bg-neutral-100 h-16 justify-between items-center">
 
-        <div class="flex">
-          <div>
+
+          <div class=" flex">
             <img src="./images/logo-header.png" alt="">
+
+            <h2 class="text-2xl hidden lg:block md:block m-3">Browse<span class="text-amber-400">4</span>Pets</h2>
           </div>
-          <div>
-            <h2 class="text-2xl m-3">Browse<span class="text-amber-400">4</span>Pets</h2>
+
+
+          <div class="hidden lg:block md:block">
+
+            <div class="flex gap-14 list-none">
+              <li class="hover:text-indigo-900"><a href="">Find a pet</a></li>
+              <li class="hover:text-indigo-900"><a href="">Breads</a></li>
+              <li class="hover:text-indigo-900"><a href="">Contact us</a></li>
+            </div>
+
           </div>
+
+            <div class="hidden lg:block md:block">
+              <div class="flex items-center">
+                <div class="cursor-pointer m-3">
+                  <i class="fa-regular fa-bell"></i>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+      
+                <div>
+                  <input class="px-5 py-1 w-24 rounded-lg" type="text" placeholder="Login">
+                  <button class="bg-amber-200 px-5 py-1 rounded-lg font-bold">Register</button>
+                </div>
+            </div>
         </div>
 
-        <div class="flex list-none gap-14">
-          <li class="hover:text-indigo-900"><a href="">Find a pet</a></li>
-          <li class="hover:text-indigo-900"><a href="">Breads</a></li>
-          <li class="hover:text-indigo-900"><a href="">Contact us</a></li>
+
+        <div class="lg:hidden md:hidden block">
+          <i class="fa-solid fa-bars"></i>
         </div>
 
-        <div class="flex items-center">
-          <div class="cursor-pointer m-3">
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-
-          <div>
-            <input class="px-5 py-1 w-24 rounded-lg" type="text" placeholder="Login">
-            <button class="bg-amber-200 px-5 py-1 rounded-lg font-bold">Register</button>
-          </div>
 
 
-        </div>
+
+
       </div>
     </nav>
   </header>
   
-  <main class="mx-20">
+  <main>
 
-    <section class="m-10">
+    <section class="mx-20">
 
         <div class="w-auto h-screen bg-[url('./images/cat-big.png')] bg-center bg-no-repeat bg-contain">
 
@@ -70,7 +83,7 @@
     </section>
 
 
-    <section>
+    <section class="mx-20">
       <div  class="mb-10">
         <h2 class="text-2xl font-bold">Browse By Categories</h2>
       </div>
@@ -127,15 +140,15 @@
 
     <section class="bg-neutral-100 my-10">
 
-      <div class="grid grid-cols-1 lg:grid-cols-5 grid-rows-3 gap-4 p-10">
+      <div class="grid grid-cols-1 lg:grid-cols-5 grid-rows-3 gap-4 p-6 m-14">
 
 
-        <div class="bg-yellow-200 py-10 px-6 row-span-3 col-span-2 rounded-lg relative">
+        <div class="bg-yellow-200 py-10 px-10 row-span-3 col-span-2 rounded-lg relative">
           <div>
             <h2 class="text-lg font-bold mb-5">T- Shirt For Fog</h2>
             <p>Discover a world of treats, toys, and essentials handpicked for</p>
             <button class="bg-white px-5 py-1 rounded-lg font-bold mt-5">Shop Now</button>
-            <div class="absolute bottom-0 left-52">
+            <div class="absolute bottom-0 left-60">
               <img src="./images/cute-pet-small.png" alt="">
             </div>
           </div>
@@ -382,25 +395,25 @@
 
     <section>
 
-      <div class="mx-16 my-10">
+      <div class="mx-20 my-10">
         <div>
           <h2 class="text-xl font-bold mb-10">Everyday low Price</h2>
         </div>
   
-        <div class="grid grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-3 gap-6">
   
-            <div class="bg-gradient-to-r from-yellow-200 to-orange-300 col-span-2 rounded-lg">
+            <div class="bg-gradient-to-r from-yellow-200 to-orange-300 col-span-1 lg:col-span-2 rounded-lg">
   
-              <div class="flex items-center justify-between px-10">
+              <div class="p-10 lg:items-center lg:flex">
                 <div>
-                  <p>Under Price</p>
+                  <p class="hidden lg:block md:block">Under Price</p>
                   <h2 class="text-3xl font-bold">Pet Grooming Mitt</h2>
-                  <p class="text-red-500 font-bold">(Easy Hair Removal)</p>
+                  <p class="text-red-500 font-bold hidden lg:block md:block">(Easy Hair Removal)</p>
                   <h1 class="text-4xl font-bold">$7.99</h1>
                 </div>
     
                 <div>
-                  <img class="w-72" src="./images/cute-dog-mid.png" alt="">
+                  <img class="h-96" src="./images/cute-dog-mid.png" alt="">
                 </div>
               </div>
             </div>
@@ -409,12 +422,12 @@
   
             <div class="bg-gradient-to-r from-red-300 to-orange-200 rounded-lg p-10 relative">
 
-              <div class="">
+              <div>
                 <h2 class="text-2xl font-bold">T-Shirt for Dogs</h2>
                 <h3 class="text-3xl text-lime-600 font-bold">$7.99</h3>
-                <div class="absolute bottom-5 left-24">
-                  <img src="./images/cute-pet-small.png" alt="">
-                </div>
+                  <div>
+                    <img src="./images/cute-pet-small.png" alt="">
+                  </div>
               </div>
 
             </div>
@@ -434,12 +447,12 @@
 
     <section class="relative">
 
-      <footer class="bg-yellow-200">
+      <footer class="bg-yellow-200 text-left">
 
         <div class="flex justify-around items-center mt-48 pt-60 px-14 pb-10">
 
           <div class="max-w-64">
-            <div class="flex items-center gap-2">
+            <div class="lg:flex items-center gap-2">
               <div><img src="./images/logo-footer.png" alt=""></div>
               <div><h3 class="font-bold">Browse<span class="text-orange-600">4</span>Pets</h3></div>
             </div>
@@ -479,15 +492,15 @@
 
 
 
-        <div class="absolute bottom-64 left-64">
+        <div class="w-10/12 absolute bottom-56 left-28">
 
-          <div class="w-9/10 mx-auto bg-slate-100 flex items-center justify-around">
+          <div class="bg-gray-300 lg:flex justify-around rounded-lg">
 
             <div>
               <img src="./images/cute-pet-small.png" alt="">
             </div>
       
-            <div>
+            <div class="text-center p-10 lg:text-left">
               <h1 class="text-2xl font-bold mb-5">Get Pawsome News!</h1>
               <p class="text-gray-800 mb-6">Exclusive training tips, ticks, product deals and more.</p>
               <input class="p-2 rounded-lg w-72" type="text" placeholder="Enter email">
